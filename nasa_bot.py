@@ -49,17 +49,10 @@ def get_celestial_distance(body_id, date):
         return None
 
 
-
-
-# Calculate angle between two vectors
-def calculate_angle(pos1, pos2):
-    v1, v2 = np.array([float(pos1[k]) for k in ['x', 'y', 'z']]), np.array([float(pos2[k]) for k in ['x', 'y', 'z']])
-    return np.degrees(np.arccos(np.dot(v1 / np.linalg.norm(v1), v2 / np.linalg.norm(v2))))
-
 # Define messages for the conversation
 messages = [
     {"role": "system", "content": "Act like a 10 year old."},
-    {"role": "user", "content": "What is the distance between Uranus and Pluto on 2024-11-22?"}
+    {"role": "user", "content": "What is the distance between Earth and Mars on 2024-03-20?"}
 ]
 
 # Define the function metadata for Azure's tool use
