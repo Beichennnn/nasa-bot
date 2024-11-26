@@ -86,7 +86,7 @@ response = client.chat.completions.create(
 
 response_message = response.choices[0].message
 tool_calls = response_message.tool_calls
-#print(tool_calls)
+print(tool_calls)
 
 # Process the tool calls from the model's response
 if tool_calls:
